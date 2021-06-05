@@ -30,9 +30,10 @@ detectar fuentes de calor.
   1 Ejecutar la aplicacion con el programa visual studio 2019(Community), donde previamente se le haya instalado .net Core 3.1.
   2 La aplicacion tipo Api, levantará con el puerto 44392 y a traves del endpoint /api/ControlForestal (POST) se enviará las instrucciones por el body de la peticcion http, de las siguientes 2 formas:
     - Con postman:
-        - Copiar y pegar la url "https://localhost:44392/api/ControlForestal" del Api.
+      - Copiar y pegar la url "https://localhost:44392/api/ControlForestal" del Api.
           ![image](https://user-images.githubusercontent.com/10048889/120906472-36c38080-c61f-11eb-8f89-f2dbe58da22d.png)
-        - Pegar la siguiente estructura en el body:
+      - Pegar la siguiente estructura en el body:
+        
           ```
           {
               "PerimetroRectanguloBase": 5,
@@ -63,8 +64,9 @@ detectar fuentes de calor.
                       "Acciones": ["L","M","L","M","L","M","L","M","M","L","M","L","M","L","M","L","M","M"]
                   }
               ] 
-          } ```
-      -  Enviar la petición con el boton "Send", el resultado respondera un code status 200 y la respuesta final con las coordenadas del recorrido del dron.
+          } 
+         ```
+   -  Enviar la petición con el boton "Send", el resultado respondera un code status 200 y la respuesta final con las coordenadas del recorrido del dron.
           ```
           [
               {
