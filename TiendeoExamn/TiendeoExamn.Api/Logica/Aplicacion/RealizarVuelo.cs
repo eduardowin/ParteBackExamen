@@ -29,22 +29,53 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
             foreach(var instruccion in instrucionesVuelo)
             {
                 var coordenadaActual = instruccion.CoordenadaVuelo;
-                var gradoActual = planoCartesianoEntity.Find(x => x.Direccion == coordenadaActual.Direccion).Valor;
 
-                foreach (var accion in instruccion.Acciones)
+                foreach (var accionInstruccion in instruccion.Acciones)
                 {
-                    var gradoEquivalenteAccion = accionesVueloDto.Find(x => x.Codigo == accion).Valor;
-                    var gradoFinal = gradoActual + gradoEquivalenteAccion;
-
-                    gradoActual = gradoFinal == 360 ? 0 : gradoFinal;
+                    switch (accionInstruccion)
+                    {
+                        case Constantes.Constantes.AccionesVuelo.Avanzar1:
+                            CalcularAvance(ref coordenadaActual);
+                            break;
+                        default:
+                            ObtenerDireccion(ref coordenadaActual, accionInstruccion);
+                            break;
+                    }
                 }
-
-                var direccionFinal = planoCartesianoEntity.Find(x => x.Valor == gradoActual).Direccion;
-                coordenadaActual.Direccion = direccionFinal;
 
                 coordenadasFinales.Add(coordenadaActual);
             }
             return coordenadasFinales;
+        }
+
+        private void CalcularAvance(ref CoordenadaVuelo coordenadaActual)
+        {
+            switch (coordenadaActual.Direccion)
+            {
+                case Constantes.Constantes.Direcciones.Este:
+                    coordenadaActual.PuntoX += 1;
+                    break;
+                case Constantes.Constantes.Direcciones.Oeste:
+                    coordenadaActual.PuntoX -= 1;
+                    break;
+                case Constantes.Constantes.Direcciones.Norte:
+                    coordenadaActual.PuntoY += 1;
+                    break;
+                case Constantes.Constantes.Direcciones.Sur:
+                    coordenadaActual.PuntoY -= 1;
+                    break;
+            }
+        }
+        private void ObtenerDireccion(ref CoordenadaVuelo coordenadaActual, string accionInstruccion)
+        {
+            var direccionActual = coordenadaActual.Direccion;
+            var anguloActual = planoCartesianoEntity.Find(x => x.Direccion == direccionActual).Angulos.First();
+
+            var anguloEquivalenteAccion = accionesVueloDto.Find(x => x.Codigo == accionInstruccion).Valor;
+            var anguloFinal = anguloActual + anguloEquivalenteAccion;
+
+            var direccionFinal = planoCartesianoEntity.Find(x => x.Angulos.FindAll(y => y == anguloFinal).Count > 0).Direccion;
+            coordenadaActual.Direccion = direccionFinal;
         }
     }
 }

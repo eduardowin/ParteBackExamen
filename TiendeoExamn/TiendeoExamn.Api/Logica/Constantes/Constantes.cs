@@ -13,5 +13,14 @@ namespace TiendeoExamn.Api.Logica.Constantes
             public const string Girar90Derecha = "R";
             public const string Avanzar1 = "M";
         }
+
+        public static class Direcciones
+        {
+            public const string Este = "E";
+            public const string Oeste = "O";
+            public const string Norte = "N";
+            public const string Sur = "S";
+        }
+
     }
 }

@@ -9,6 +9,6 @@ namespace TiendeoExamn.Api.Logica.Dto
     {
         public string Direccion { get; set; }
         public string Descripcion { get; set; }
-        public int Valor { get; set; }
+        public List<int> Angulos { get; set; }
     }
 }
