@@ -20,7 +20,6 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
             this.configuration = configuration;
             this.accionesVueloDto = optionsAccionesVuelo.Value;
             this.planoCartesianoEntity = optionsPlanoCartesiano.Value;
-
         }
         public List<CoordenadaVuelo> CalcularVuelo(List<InstruccionVueloDto> instrucionesVuelo)
         {

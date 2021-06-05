@@ -18,3 +18,9 @@ C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoE
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.dll
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.pdb
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.genruntimeconfig.cache
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csproj.CopyComplete
