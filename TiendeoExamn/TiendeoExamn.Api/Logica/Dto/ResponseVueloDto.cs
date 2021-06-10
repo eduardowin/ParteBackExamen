@@ -9,6 +9,7 @@ namespace TiendeoExamn.Api.Logica.Dto
     {
         public bool Resultado { get; set; }
         public string Mensaje { get; set; }
+        public int TipoError { get; set; }
         public List<CoordenadaVuelo> CoordenadasFinales { get; set; } = new List<CoordenadaVuelo>();
     }
 }

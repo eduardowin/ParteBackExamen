@@ -15,6 +15,6 @@ namespace TiendeoExamn.Api.Logica.Dto
         [Range(1, double.MaxValue, ErrorMessage = "La altura del rectangulo debe ser mayor de 1")]
         public int PerimetroRectanguloAltura { get; set; }
         [Required, MinLength(1, ErrorMessage = "Debe ingresar almenos una instruccion de vuelo")]
-        public List<InstruccionVueloDto> InstruccionesDto { get; set; }
+        public List<InstruccionVueloDto> InstruccionesDto { get; set; } = new List<InstruccionVueloDto>();
     }
 }

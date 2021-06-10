@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TiendeoExamn.Api.Tests": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

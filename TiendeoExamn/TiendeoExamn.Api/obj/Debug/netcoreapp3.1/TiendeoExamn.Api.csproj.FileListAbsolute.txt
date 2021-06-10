@@ -6,7 +6,6 @@ C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoE
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\TiendeoExamn.Api.runtimeconfig.dev.json
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\TiendeoExamn.Api.dll
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\TiendeoExamn.Api.pdb
-C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csprojAssemblyReference.cache
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.AssemblyInfoInputs.cache
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.AssemblyInfo.cs
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csproj.CoreCompileInputs.cache
@@ -25,3 +24,4 @@ C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoE
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csproj.CopyComplete
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csprojAssemblyReference.cache

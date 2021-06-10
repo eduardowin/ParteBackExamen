@@ -98,6 +98,7 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
                 coordenadaActual.PuntoY > perimetroRectanguloAltura ||
                 coordenadaActual.PuntoX > perimetroRectanguloBase)
             {
+                responseVueloDto.TipoError = 1; // Definimos 1 cuando hay un error en el area sobrevolada.
                 responseVueloDto.Resultado = false;
                 responseVueloDto.Mensaje = "Las acciones ingresadas sobrepasan el area de vuelo con el valor: " + accionInstruccion + ", en la instruccion inicial: " + JsonConvert.SerializeObject(coordenadaInicial);
                 responseVueloDto.CoordenadasFinales.Clear();
