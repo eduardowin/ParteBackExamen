@@ -20,7 +20,7 @@
     "TiendeoExamn.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "api/ControlForestal",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -24,3 +24,4 @@ C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoE
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\obj\Debug\netcoreapp3.1\TiendeoExamn.Api.csproj.CopyComplete
+C:\Users\USER ASUS\Desktop\ParteBackExamen\ParteBackExamen\TiendeoExamn\TiendeoExamn.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

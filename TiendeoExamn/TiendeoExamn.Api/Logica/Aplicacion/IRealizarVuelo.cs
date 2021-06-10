@@ -9,5 +9,6 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
     public interface IRealizarVuelo
     {
         List<CoordenadaVuelo> CalcularVuelo(List<InstruccionVueloDto> instrucionesVuelo);
+        ResponseVueloDto ValidarAreaVuelo(PeticionDto peticionDto);
     }
 }
