@@ -10,6 +10,7 @@ detectar fuentes de calor.
   - .Net Core 3.1
   - Lenguaje C#
   - Swashbuckle.AspNetCore 6.1.4
+  - MSTest
 
 ## Estructura prototipo inicial
 ![image](https://user-images.githubusercontent.com/10048889/120905061-3a520a00-c615-11eb-892a-fa4d3abc1139.png)
@@ -127,4 +128,16 @@ detectar fuentes de calor.
       - Enviar la petición con el boton "Execute", el resultado respondera un code status 200 y la respuesta final con las coordenadas del recorrido del dron.
             ![image](https://user-images.githubusercontent.com/10048889/120907008-915edb80-c623-11eb-8f77-740ec70b62c6.png)
 
+## Test Unitarios
 
+Se han creado 5 test unitarios para validar 5 escenarios del correcto vuelo de la aplicacion.
+  - Post_SiLaDireccionInicialNoEsValida_SeNosRetornaUn400
+    Las direccion inicial, solo puede aceptar valores como "N":Norte,"S":Sur,"E":Este,"O":Oeste
+  - Post_SiLasAccionesNoSonValidas_SeNosRetornaUn400
+    Las acciones ingresadas solo pueden ser los valores como "L": Izquierda, "R": Derecha, "M": Avanzar
+  - Post_SiElAreaDeVueloDelDronPorSusAccionesNoEsValida_SeNosRetornaUn400
+    Valida el area de vuelo del dron, si las instrucciones indican que el dron debe salir del area, este retornará un 400(BadResquest).
+  - Post_SiLosValoresDeVueloIngresadoSonValidos_Caso01_SeNosRetornaUn200
+    Se prueba que el api, retorne 200 con las coordenadas finales, para un primer escenario sencillo, con los valores correctamente ingresados.
+  - Post_SiLosValoresDeVueloIngresadoSonValidos_Caso02_SeNosRetornaUn200
+    Se prueba que el api, retorne 200 con las coordenadas finales, para un segundo escenario más complejo, con los valores correctamente ingresados.
