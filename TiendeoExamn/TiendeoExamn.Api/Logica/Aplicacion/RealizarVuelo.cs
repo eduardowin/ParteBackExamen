@@ -22,32 +22,6 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
             this.accionesVueloDto = optionsAccionesVuelo.Value;
             this.planoCartesianoEntity = optionsPlanoCartesiano.Value;
         }
-        public List<CoordenadaVuelo> CalcularVuelo(List<InstruccionVueloDto> instrucionesVuelo)
-        {
-            var coordenadasFinales = new List<CoordenadaVuelo>();
-
-            foreach(var instruccion in instrucionesVuelo)
-            {
-                var coordenadaActual = instruccion.CoordenadaVuelo;
-
-                foreach (var accionInstruccion in instruccion.Acciones)
-                {
-                    switch (accionInstruccion)
-                    {
-                        case Constantes.Constantes.AccionesVuelo.Avanzar1:
-                            CalcularAvance(ref coordenadaActual);
-                            break;
-                        default:
-                            ObtenerDireccion(ref coordenadaActual, accionInstruccion);
-                            break;
-                    }
-                }
-
-                coordenadasFinales.Add(coordenadaActual);
-            }
-            return coordenadasFinales;
-        }
-
         private void CalcularAvance(ref CoordenadaVuelo coordenadaActual)
         {
             switch (coordenadaActual.Direccion)
@@ -78,7 +52,7 @@ namespace TiendeoExamn.Api.Logica.Aplicacion
             coordenadaActual.Direccion = direccionFinal;
         }
 
-        public ResponseVueloDto ValidarAreaVuelo(PeticionDto peticionDto)
+        public ResponseVueloDto CalcularVuelo(PeticionDto peticionDto)
         {
             var responseVueloDto = new ResponseVueloDto();
 

@@ -23,7 +23,7 @@ namespace TiendeoExamn.Api.Controllers
         [HttpPost]
         public async Task<ActionResult> LanzarDron(PeticionDto peticionDto)
         {
-            var responseDto = realizarVuelo.ValidarAreaVuelo(peticionDto);
+            var responseDto = realizarVuelo.CalcularVuelo(peticionDto);
 
             if (!responseDto.Resultado)
             {
