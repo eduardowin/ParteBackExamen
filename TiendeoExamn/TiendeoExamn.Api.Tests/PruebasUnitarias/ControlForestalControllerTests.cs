@@ -31,34 +31,9 @@ namespace TiendeoExamn.Api.Tests.PruebasUnitarias
         public ControlForestalControllerTests()
         {
         }
-
-        //[TestInitialize]
-        //public void Initialize()
-        //{
-        //    _factory = new WebApplicationFactory<Startup>();
-        //}
-
-        //public WebApplicationFactory<Startup> ConstruirWebHostBuilderConfigurado()
-        //{
-        //    return _factory.WithWebHostBuilder(builder =>
-        //    {
-        //        builder.ConfigureTestServices(services =>
-        //        {
-        //            services.AddRegistration();
-        //            //services.AddControllers(options =>
-        //            //{
-        //            //    options.Filters.Add(new UsuarioFalsoFilter());
-        //            //});
-        //        });
-        //    });
-        //}
-
         [TestMethod]
         public async Task Post_SiLaDireccionInicialNoEsValida_SeNosRetornaUn400()
         {
-            //// Verificación
-            //Assert.IsInstanceOfType(resultado.Result, typeof(NotFoundResult));
-
             //// preparación
             _factory = new WebApplicationFactory<Startup>();
             var client = _factory.CreateClient();
